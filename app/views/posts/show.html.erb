@@ -1,0 +1,56 @@
+<div class= "container">
+ <h3>スケジュール詳細</h3>
+
+ <table class ="show-schedule">
+  <tr>
+   <th>タイトル</th>
+   <td><%= @post.content %></td>
+  </tr>
+  <tr>
+   <th>開始日</th>
+   <td><%= @post.start_date.strftime("%Y年%m月%d日") %></td>
+  </tr>
+  <tr>
+   <th>投稿日時</th>
+   <td><%= @post.created_at.strftime("%Y年%m月%d日") %></td>
+  </tr>
+  <tr>
+   <th>終日</th>
+   <td>
+    <% if @post.all_day == true%>
+    ○
+    <% else %>
+    <% end %>
+   </td>
+  </tr>
+  <tr>
+   <th>スケジュールメモ</th>
+   <td><%= @post.schedule_memo %></td>
+  </tr>
+ </table>
+
+ <div class ="show-link">
+  <ul>
+   <li>
+    <%= link_to("/posts") do  %>
+     <button>一覧に戻る</button>
+    <% end %>
+   </li>
+   <li>
+    <%= link_to("/posts/#{@post.id}/edit") do %>
+     <button>編集</button>
+    <% end %>
+   </li>
+   <li>
+    <%= link_to("/posts/#{@post.id}",{method: "delete"}) do %>
+     <button>削除</button>
+    <% end %>
+   </li>
+  </ul>
+ </div>
+ <div class = "footer">
+    <div class = "now-date">
+     <h2>現在の日時:<%= Date.today.strftime("%Y年%-m月%-d日") %></h2>
+    </div>
+   </div>
+</div>

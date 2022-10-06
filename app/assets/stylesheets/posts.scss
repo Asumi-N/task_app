@@ -1,0 +1,162 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body{
+    padding-bottom: 100px;
+} 
+.container {
+    margin-top: 150px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.container h1{
+    font-size: 25px;
+}
+.task-list {
+    border-collapse: collapse;
+    width: 95%;
+}
+.task-list th,.task-list td{
+    border: solid 1px black;
+    text-align: center;
+    padding: 10px;
+}
+.task-list th{
+    background-color: #bc8f8f;
+}
+.task-list td{
+    background-color: #fff5ee;
+}
+.footer{
+    background-color: brown;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer h2{
+    padding-left: 15px;
+    color: antiquewhite;
+    float: left;
+}
+.login-link button{
+    margin: 25px;
+    height: 45px;
+    width: 310px;
+    font-size: 18px;
+    color: antiquewhite;
+    background-color: #bc8f8f;
+    border-bottom: 5px solid #664a4a;
+    border-radius: 5px;
+}
+.login-link button:hover{
+    margin-top: 28px;
+    background-color: #bc8f8f;
+    border-bottom: 2px solid #664a4a;
+    cursor: pointer;
+}
+.signin {
+    border-collapse: collapse;
+    width: 40%;
+}
+.signin th,.signin td{
+    border: solid 1px black;
+    text-align: center;
+    padding: 10px;
+}
+.signin th{
+    background-color: #bc8f8f;
+}
+.signin td{
+    background-color: #fff5ee;
+    padding: 10px 20px;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+input[type="date"]{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+textarea{
+    width: 100%;
+    height: 95%;
+    padding: 5px;
+    font-size: 16px;
+}
+.textarea{
+    height: 200px;
+}
+input[type="submit"]{
+    width: auto;
+    cursor: pointer;
+    background-color: #fff5ee;
+    font-size:  16px;
+    margin-right: 4px;
+    border: solid 1px black;  
+}
+.submit{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.submit button{
+    margin-left: 10px;
+    background-color: #fff5ee;
+    font-size:  16px;
+    margin-right: 4px;
+    border: solid 1px black;
+}
+.back-to-indexbtn {
+    text-decoration: none;
+    color: black;
+}
+.show-schedule{
+    border-collapse: collapse;
+    width: 40%;
+}
+.show-schedule th,.show-schedule td{
+    border: solid 1px black;
+    text-align: center;
+    padding: 10px;
+}
+.show-schedule th{
+    background-color: #bc8f8f;
+}
+.show-schedule td{
+    background-color: #fff5ee;
+}
+.show-link ul{
+    list-style-type: none;
+    display: flex;
+}
+.show-link button{
+    background-color: #fff5ee;
+    font-size:  16px;
+    margin-right: 4px;
+    border: solid 1px black;
+}
+.show-link button:hover{
+    cursor: pointer;
+}
+.edit-submit ul{
+    list-style-type: none;
+    display: flex; 
+}
+.edit-submit button{
+    background-color: #fff5ee;
+    font-size:  16px;
+    margin-right: 4px;
+    border: solid 1px black;
+    cursor: pointer;
+}
+.notice{
+    background-color: burlywood;
+    color: #fff5ee;
+    text-align: center;
+}
+
+
